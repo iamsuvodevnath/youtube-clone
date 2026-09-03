@@ -1,0 +1,26 @@
+.home-wrapper {
+  display: flex;
+  background: #f9f9f9;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.container {
+  flex: 1;
+  padding: 20px 2% 20px 17%;
+  transition: padding-left 0.3s ease;
+}
+
+.large-container {
+  padding-left: 7%;
+  
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .container,
+  .large-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

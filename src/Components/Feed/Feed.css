@@ -1,0 +1,71 @@
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 24px; /* combines row + column gap */
+  margin-top: 20px;
+  padding: 0 10px;
+
+}
+
+/* Card container */
+.card {
+  width: ;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail */
+.thumbnail {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Title */
+.video-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 8px 0 4px 0;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Channel name */
+.channel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin: 2px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Stats (views + time) */
+.stats {
+  font-size: 15px;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* States */
+.loading,
+.no-videos {
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  padding: 20px 0;
+}
